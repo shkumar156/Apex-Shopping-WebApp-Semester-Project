@@ -8,6 +8,7 @@ function Navbar({ setUser, setAdminUser, user, admin }) {
     setAdminUser(false);
     setUser(false);
   };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg">
@@ -28,26 +29,30 @@ function Navbar({ setUser, setAdminUser, user, admin }) {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link to="/Home" className="nav-link txt !active">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/aboutus" className="nav-link txt !active">
-                  About Us
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/menucard" className="nav-link txt !active">
-                  Menu
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/contactus" className="nav-link txt !active">
-                  Contact Us
-                </Link>
-              </li>
+              {(user || admin) && (
+                <>
+                  <li className="nav-item">
+                    <Link to="/Home" className="nav-link txt !active">Home</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/aboutus" className="nav-link txt !active">About Us</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/menucard" className="nav-link txt !active">Menu</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/contactus" className="nav-link txt !active">Contact Us</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/sale" className="nav-link txt !active">Sale Items</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/track" className="nav-link txt !active">Track Orders</Link>
+                  </li>
+                </>
+              )}
+
+              {/* Signup/Login dropdown always visible */}
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle txt !active"
@@ -61,36 +66,19 @@ function Navbar({ setUser, setAdminUser, user, admin }) {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link to="/signup" className="dropdown-item">
-                      Sign Up
-                    </Link>
+                    <Link to="/signup" className="dropdown-item">Sign Up</Link>
                   </li>
                   <li>
-                    <Link to="/customerlogin" className="dropdown-item">
-                      Login
-                    </Link>
+                    <Link to="/customerlogin" className="dropdown-item">Login</Link>
                   </li>
-                  {/* You can add more items to the User dropdown as needed */}
                 </ul>
               </li>
 
+              {/* Admin always visible */}
               <li className="nav-item">
-                <Link to="/sale" className="nav-link txt !active">
-                  Sale Items
-                </Link>
+                <Link to="/adminlogin" className="nav-link txt !active">Admin</Link>
               </li>
 
-              <li className="nav-item">
-                <Link to="/track" className="nav-link txt !active">
-                  Track Orders
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link to="/adminlogin" className="nav-link txt !active">
-                  Admin
-                </Link>
-              </li>
               {(user || admin) && (
                 <li className="nav-item">
                   <Link onClick={handleLogout} className="nav-link txt !active">
@@ -99,17 +87,21 @@ function Navbar({ setUser, setAdminUser, user, admin }) {
                 </li>
               )}
             </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-danger" type="submit">
-                Search
-              </button>
-            </form>
+
+            {/* Search bar visible only when logged in */}
+            {(user || admin) && (
+              <form className="d-flex" role="search">
+                <input
+                  className="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button className="btn btn-outline-danger" type="submit">
+                  Search
+                </button>
+              </form>
+            )}
           </div>
         </div>
       </nav>
