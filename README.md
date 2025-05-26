@@ -1,4 +1,4 @@
-========================================User==========================================
+User View!
 ![Screenshot 2025-05-26 135443](https://github.com/user-attachments/assets/1f750cce-3654-45f3-81f1-545a0ea1f6fb)
 ![Screenshot 2025-05-26 135503](https://github.com/user-attachments/assets/b2124520-a97e-4961-9b47-494b67b7cafe)
 ![Screenshot 2025-05-26 135430](https://github.com/user-attachments/assets/8031409b-2268-4ba7-9a1a-49cbd97db270)
@@ -7,7 +7,7 @@
 ![Screenshot 2025-05-26 135301](https://github.com/user-attachments/assets/77c214e4-91ed-422a-9b2e-dd0c556dc273)
 ![Screenshot 2025-05-26 135221](https://github.com/user-attachments/assets/c24918af-b684-4edc-8caf-148563a2b41f)
 
-========================================ADMIN==========================================
+Admin View!
 
 ![Admin1](https://github.com/user-attachments/assets/c4194be3-9a58-42d4-9c25-a9390db4a981)
 ![Admin2](https://github.com/user-attachments/assets/e42a9642-f609-4200-9bfc-f0cc72f55d7e)
