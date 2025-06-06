@@ -1,23 +1,38 @@
-/* UserLoginDetails.css */
+/* Ensure the whole page uses flexbox layout */
+.PageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: black; /* Optional: match the background */
+}
 
 .UserDetailsContainer {
-        color: white;
-        margin-top: 50px;
-      }
-      
-      .UserDetailRow {
-        display: flex;
-        margin-bottom: 10px;
-      }
-      
-      .UserDetailLabel {
-        font-weight: bold;
-        margin-right: 10px;
-      }
-      
-      .UserDetailValue {
-        font-style: italic;
-      }
-      
-      /* Add more styling as needed */
-      
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  flex: 1; /* Take remaining space to push footer down */
+}
+
+.WelcomeMessage {
+  font-size: 24px;
+  margin-bottom: 50px;
+  margin-right: 55px;
+}
+
+.ExploreButton {
+  background-color: white;
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto;
+  min-width: 180px;
+}
+
+.ExploreButton:hover {
+  background-color: #333;
+  color: white;
+}

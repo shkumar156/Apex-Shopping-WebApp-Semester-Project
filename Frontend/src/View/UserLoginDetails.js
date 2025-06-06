@@ -1,21 +1,24 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./UserLoginDetails.css";
+import Footer from "../components/Footer";
 
-const UserLoginDetails = ({ userData }) => {
+const UserLoginDetails = () => {
+  const navigate = useNavigate();
+
+  const handleExploreClick = () => {
+    navigate("/home");
+  };
+
   return (
-    <div className="UserDetailsContainer">
-      <div className="UserDetailRow">
-        <div className="UserDetailLabel">User id</div>:
-        <div className="UserDetailValue">{userData._id?userData._id:userData?.sub}</div>
+    <div className="PageWrapper">
+      <div className="UserDetailsContainer">
+        <h2 className="WelcomeMessage">Welcome to Apex Shop!</h2>
+        <button className="ExploreButton" onClick={handleExploreClick}>
+          Explore
+        </button>
       </div>
-      <div className="UserDetailRow">
-        <div className="UserDetailLabel">User email</div>:
-        <div className="UserDetailValue">{userData?.email}</div>
-      </div>
-      <div className="UserDetailRow">
-        <div className="UserDetailLabel">User gender</div>:
-        <div className="UserDetailValue">{userData.gender?userData.gender:"Male"}</div>
-      </div>
+      <Footer />
     </div>
   );
 };
