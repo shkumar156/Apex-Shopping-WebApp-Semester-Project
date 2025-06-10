@@ -107,17 +107,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ⸻
 
 👤 Author
-	•	GitHub: @shkumar156
-
-
-
-
-
-
-
-
-
-
+•	GitHub: @shkumar156
 
 
 
