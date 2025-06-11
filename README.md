@@ -77,52 +77,7 @@ Make sure you have the following installed:
 
 ```bash
 git clone https://github.com/shkumar156/Apex-Shopping
-###
-2.	**Navigate to the project directory**
-cd Apex-Shopping
-###
-3.	**Install dependencies**
-npm install
-###
-4.	**Set up environment variables**
-Create a .env file in the root directory and configure the following:
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+ 
 
-▶️ Usage
-
-Run the development server:
-npm start
-
-The app will be accessible at http://localhost:5000.
-
-🧪 Testing
-
-This project uses {test_framework} for testing.
-
-To run the test suite:
-npm test
-
-
-🤝 Contributing
-
-Contributions are welcome! Please fork the repo and create a pull request.
-	1.	Fork the project
-	2.	Create your feature branch: git checkout -b feature/AmazingFeature
-	3.	Commit your changes: git commit -m 'Add some AmazingFeature'
-	4.	Push to the branch: git push origin feature/AmazingFeature
-	5.	Open a pull request
-
-⸻
-
-📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-⸻
-
-👤 Author
-•	GitHub: @shkumar156
 
 
