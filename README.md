@@ -61,13 +61,13 @@ Make sure you have the following installed:
 
 ```bash
 git clone https://github.com/shkumar156/Apex-Shopping
-
+###
 2.	**Navigate to the project directory**
 cd Apex-Shopping
-
+###
 3.	**Install dependencies**
 npm install
-
+###
 4.	**Set up environment variables**
 Create a .env file in the root directory and configure the following:
 PORT=5000
@@ -109,7 +109,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 👤 Author
 •	GitHub: @shkumar156
 
-
+###
 User View!
 ![Screenshot 2025-05-26 135443](https://github.com/user-attachments/assets/1f750cce-3654-45f3-81f1-545a0ea1f6fb)
 ![Screenshot 2025-05-26 135503](https://github.com/user-attachments/assets/b2124520-a97e-4961-9b47-494b67b7cafe)
