@@ -4,7 +4,7 @@ import './login.css';
 import Footer from './Footer'; // Import your Footer component
 
 const Login = ({adminLogin}) => {
-  const [formData, setFormData] = useState({ username: '', password: '' });
+  const [formData, setFormData] = useState({ username: 'umar126@gmail.com', password: 'qwerty5678' });
   const [formErrors, setFormErrors] = useState({});
   const [isFormValid, setIsFormValid] = useState(false);
   const [loginSuccess, setLoginSuccess] = useState(false);
