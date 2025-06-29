@@ -1,10 +1,19 @@
 .navbar {
     background-color: black;
     z-index: 1;
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-bottom: 0 !important;
 }
 
 .logo {
     height: 40px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    display: block;
 }
 
 .nav-item .nav-link {
@@ -30,8 +39,12 @@
     padding: 10px 5px;
   }
   .logo {
-    height: 28px;
-    margin-bottom: 10px;
+    height: 32px;
+    width: auto;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    max-width: 120px;
+    display: block;
   }
   .btn {
     width: 100%;
@@ -42,5 +55,9 @@
     font-size: 1rem;
     padding: 8px 0;
   }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
