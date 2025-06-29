@@ -1,200 +1,69 @@
 /* Footer.css */
 .footer {
-        background-color: black;
-        color: orange;
-        padding: 30px 0;
-        margin-top: 1%;
-        
-      }
-      
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        
-        
-      }
-      
-      .footer-info {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
-      
-      h4 {
-        font-size: 18px;
-        margin-bottom: 15px;
-        margin-left: -5%;
-      }
-      
-      .p1 {
-        margin: 0;
-        margin-bottom: 10px;
-        margin-left: -5%;
-        
-      }
-      .p2 {
-        margin: 0;
-        margin-bottom: 10px;
-        margin-left: -5%;
-        
-      }
-      .p3 {
-        margin: 0;
-        margin-bottom: 10px;
-        margin-left: -5%;
-        
-      }
-      
-      ul {
-        list-style: none;
-        padding: 0;
-        
-      }
-      
-      ul li {
-        margin-bottom: 5px;
-      }
-      
-      a {
-        color: orange;
-        text-decoration: none;
-      }
-      
-      a:hover {
-        text-decoration: underline;
-      }
-      
-      .newsletter-signup {
-        flex-basis: 30%;
-        max-width: 300px;
-        margin-left: 10%;
-      }
-      
-      input[type="email"] {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        margin-left: -6%;
-      }
-      
-      button {
-        background-color: #ff6600;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        margin-left: -5%;
-        border: #ff6600;
-       
-       
-      }
-      
-      button:hover {
-        background-color: #ff9900;
-      }
-      
-      .cs{
-        margin-left: 15%;
-      }
-
-      .cs1{
-        margin-left: 15%;
-      }
-
-      .newsletterr{
-        margin-left: -5%;
-      }
-
-      .subscribe{
-        color: #ff9900;
-      }
-      
+  background: #000;
+  color: #fff;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  border-radius: 0;
+  box-shadow: none;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo {
+  width: 70px;
+  height: auto;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+.footer-tagline {
+  color: #fff;
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+}
+.footer-bottom {
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 30px;
+  letter-spacing: 0.02em;
+  word-break: normal;
+}
+.footer-bottom .designer {
+  color: #ff9900;
+  text-decoration: none;
+  margin-left: 6px;
+  white-space: nowrap;
+}
 @media (max-width: 600px) {
   .footer {
-    background: #000 !important;
-    color: #fff !important;
-    padding: 30px 10px 20px 10px;
-    border-radius: 18px 18px 0 0;
-    box-shadow: 0 -2px 16px rgba(0,0,0,0.12);
-    margin: 0 auto;
-    width: 98vw;
-    text-align: center;
-  }
-  .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    padding: 0;
-    margin: 0;
+    padding: 22px 0 12px 0;
     width: 100%;
+    min-width: 0;
+    border-radius: 0;
+    box-shadow: none;
   }
-  .footer-info, .newsletter-signup {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto 12px auto;
-    padding: 0;
+  .footer-logo {
+    width: 44px;
+    margin-bottom: 7px;
   }
-  h4 {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    margin-left: 0;
-    color: #fff !important;
+  .footer-tagline {
+    font-size: 1.08rem;
+    margin-bottom: 13px;
+    padding: 0 8px;
+    word-break: break-word;
   }
-  .p1, .p2, .p3 {
-    margin-left: 0;
+  .footer-bottom {
     font-size: 0.95rem;
-    color: #ff9900 !important;
+    margin-top: 18px;
+    padding: 0 8px;
+    word-break: normal;
   }
-  ul {
-    padding: 0;
-    margin: 0 auto 10px auto;
-    text-align: center;
-  }
-  ul li {
-    margin-bottom: 8px;
-    font-size: 1rem;
-  }
-  a {
-    color: #ff9900 !important;
-    font-size: 1.05rem;
-    padding: 8px 0;
-    display: inline-block;
-    border-radius: 6px;
-    transition: background 0.2s;
-  }
-  a:hover {
-    background: #222;
-    color: #fff !important;
-  }
-  input[type="email"] {
-    font-size: 1rem;
-    padding: 12px 8px;
-    border-radius: 8px;
-    margin: 10px 0;
-    width: 95%;
-    border: 1px solid #ff9900;
-    color: #222;
-    background: #fff;
-  }
-  button {
-    width: 100%;
-    font-size: 1.1rem;
-    padding: 12px 0;
-    border-radius: 8px;
-    background: #ff9900;
-    color: #fff;
-    margin: 10px 0 0 0;
-    border: none;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  }
-  .subscribe {
-    color: #ff9900 !important;
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-top: 10px;
+  .footer-bottom .designer {
+    font-size: 1.08em;
+    white-space: nowrap;
   }
 }
       

@@ -27,6 +27,8 @@
 }
 
 .row11 {
+    display: flex;
+    flex-direction: row;
     height: 83vh;
     background-color: white;
 }
@@ -40,11 +42,19 @@
     color: white;
 }
 
+.col-md-3 {
+    flex: 0 0 240px;
+    max-width: 240px;
+    padding: 0;
+    margin-top: -0.4%;
+}
+
 .col-md-9 {
+    flex: 1 1 0%;
     border: 2px solid black;
     height: 100vh;
     background-color: blueviolet;
-    margin-left: 240px;
+    margin-left: 0;
 }
 
 .admin-side-bar {
@@ -71,11 +81,6 @@
     color: #000 !important;
 }
 
-.col-md-3 {
-    padding: 0;
-    margin-top: -0.4%;
-}
-
 .adminSidebar-icons {
     margin: 0px 15px;
 }
@@ -89,8 +94,7 @@
     margin-top: 0 !important;
   }
   .row11 {
-    display: flex !important;
-    flex-direction: column !important;
+    flex-direction: column;
     width: 100vw !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -132,8 +136,8 @@
     margin: 0 !important;
     min-width: 0 !important;
     box-sizing: border-box;
-    height: 0 !important;
-    overflow: hidden !important;
+    height: auto !important;
+    overflow: visible !important;
   }
   .col-md-9 {
     flex: 1 1 auto !important;
@@ -145,6 +149,7 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
+    margin-left: 0 !important;
   }
   .product-form-container {
     width: 100% !important;

@@ -25,7 +25,7 @@ function Rating() {
   };
 
   return (
-    <>
+    <div className="rating-page">
       <div className="rating">
         <br />
         <br />
@@ -54,7 +54,7 @@ function Rating() {
         <br />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

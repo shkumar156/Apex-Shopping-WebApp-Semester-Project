@@ -42,3 +42,19 @@
         border: 2px;
         
     }
+
+@media (max-width: 600px) {
+  .container1 {
+    padding: 6px;
+    margin-left: 0;
+  }
+  .card-img-top1 {
+    height: 28vh;
+    border-radius: 10px;
+  }
+  .card-img-top2 {
+    height: 38vh;
+    width: 98vw;
+    border-radius: 16px;
+  }
+}

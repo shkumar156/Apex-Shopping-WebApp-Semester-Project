@@ -11,11 +11,15 @@ function Home() {
     <>
       <div className="container-fluid">
         <div className="row row2">
-          <Carousel />
-          <Homeall />
+          <div style={{ marginBottom: '12px' }}>
+            <Carousel />
+          </div>
+          <div style={{ marginBottom: '12px' }}>
+            <Homeall />
+          </div>
           <img className="carouselImg" src={banner} alt="" />
           <Link to="/rate"> {/* Add a Link to the /track path */}
-            <button className="rate-title">
+            <button className="rate-title" style={{ marginTop: '8px', marginBottom: '8px' }}>
               <h3>Rate our Website</h3>
             </button>
           </Link>

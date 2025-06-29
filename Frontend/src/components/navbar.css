@@ -35,15 +35,15 @@
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 10px 5px;
   }
   .logo {
-    height: 32px;
-    width: auto;
-    margin-bottom: 8px;
-    margin-top: 2px;
-    max-width: 120px;
+    height: 28px !important;
+    width: auto !important;
+    margin: 0 auto 6px auto !important;
+    margin-top: 2px !important;
+    max-width: 90px !important;
     display: block;
   }
   .btn {

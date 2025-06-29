@@ -59,7 +59,7 @@ function Navbar({ setUser, setAdminUser, user, admin }) {
                 </li>
                 {admin && (
                   <li className="nav-item">
-                    <Link to="/add" className="nav-link txt !active" onClick={closeNavbar}>Admin Dashboard</Link>
+                    <Link to="/map" className="nav-link txt !active" onClick={closeNavbar}>Admin Dashboard</Link>
                   </li>
                 )}
               </>

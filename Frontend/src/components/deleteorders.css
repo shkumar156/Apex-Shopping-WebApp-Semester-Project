@@ -24,7 +24,7 @@
 .form-group label {
   display: block;
   text-align: left;
-  color: black;
+  color: black !important;
 }
 
 .form-group input {

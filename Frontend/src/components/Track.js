@@ -28,7 +28,7 @@ function Track() {
   }, [trackMessage]);
 
   return (
-    <>
+    <div className="track-page">
       <div className="track-container">
         <div className="track-row">
           <div className="track-col">
@@ -62,7 +62,7 @@ function Track() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
