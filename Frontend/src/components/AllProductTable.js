@@ -32,76 +32,78 @@ export default function AllProductTable() {
   };
 
   return (
-    <div className="all-product-table-container">
-      {loading ? (
-        <div className="loading-container">
-          <CircularProgress />
-        </div>
-      ) : (
-        <>
-          <div className="button-container">
-            <Button
-              onClick={handleCreate}
-              variant="contained"
-              style={{ backgroundColor: "black", color: "#fff" }}
-            >
-              Add New Product
-            </Button>
+    <div className="product-form-container">
+      <div className="all-product-table-container">
+        {loading ? (
+          <div className="loading-container">
+            <CircularProgress />
           </div>
+        ) : (
+          <>
+            <div className="button-container">
+              <Button
+                onClick={handleCreate}
+                variant="contained"
+                style={{ backgroundColor: "black", color: "#fff" }}
+              >
+                Add New Product
+              </Button>
+            </div>
 
-          <TableContainer component={Paper} className="table-container">
-            <Table className="custom-table" aria-label="simple table">
-              <TableHead>
-                <TableRow>
-                  <TableCell>Id</TableCell>
-                  <TableCell align="right">Name</TableCell>
-                  <TableCell align="right">Description</TableCell>
-                  <TableCell align="right">Price</TableCell>
-                  <TableCell align="right">Category</TableCell>
-                  <TableCell align="right">Create Date</TableCell>
-                  <TableCell align="right">Image</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {allProduct.map((row) => (
-                  <TableRow key={row._id} className="table-row">
-                    <TableCell component="th" scope="row">
-                      {row._id}
-                    </TableCell>
-                    <TableCell align="right">{row.name}</TableCell>
-                    <TableCell align="right">{row.description}</TableCell>
-                    <TableCell align="right">{row.price}</TableCell>
-                    <TableCell align="right">{row.category}</TableCell>
-                    <TableCell align="right">{row.createdAt}</TableCell>
-                    <TableCell align="right" className="hoverable-cell">
-                      <div className="table-row">
-                        <img
-                          src={row.image}
-                          alt={row.name}
-                          className="product-image"
-                        />
-                        <div className="overlay">
-                         
-                          <div className="icons">
-                            <a
-                              href={row.image}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="icon"
-                            >
-                              <FontAwesomeIcon icon={faImage} />
-                            </a>
+            <TableContainer component={Paper} className="table-container">
+              <Table className="custom-table" aria-label="simple table">
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Id</TableCell>
+                    <TableCell align="right">Name</TableCell>
+                    <TableCell align="right">Description</TableCell>
+                    <TableCell align="right">Price</TableCell>
+                    <TableCell align="right">Category</TableCell>
+                    <TableCell align="right">Create Date</TableCell>
+                    <TableCell align="right">Image</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {allProduct.map((row) => (
+                    <TableRow key={row._id} className="table-row">
+                      <TableCell component="th" scope="row">
+                        {row._id}
+                      </TableCell>
+                      <TableCell align="right">{row.name}</TableCell>
+                      <TableCell align="right">{row.description}</TableCell>
+                      <TableCell align="right">{row.price}</TableCell>
+                      <TableCell align="right">{row.category}</TableCell>
+                      <TableCell align="right">{row.createdAt}</TableCell>
+                      <TableCell align="right" className="hoverable-cell">
+                        <div className="table-row">
+                          <img
+                            src={row.image}
+                            alt={row.name}
+                            className="product-image"
+                          />
+                          <div className="overlay">
+                           
+                            <div className="icons">
+                              <a
+                                href={row.image}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="icon"
+                              >
+                                <FontAwesomeIcon icon={faImage} />
+                              </a>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </>
-      )}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </>
+        )}
+      </div>
     </div>
   );
 }

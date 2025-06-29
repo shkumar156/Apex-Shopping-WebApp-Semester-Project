@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Hoodie.css';
 import { API } from '../App';
+import Footer from './Footer';
 
 function HoodieMenu() {
   const [hoodies, setHoodies] = useState([]);
@@ -27,6 +28,7 @@ function HoodieMenu() {
   }, []); // Empty dependency array ensures that this effect runs only once on mount
 
   return (
+    <div>
     <div className="Hoodie-menu">
       <h2>Hoodie Menu</h2>
       <ul className="Hoodie-menu-ul">
@@ -39,10 +41,13 @@ function HoodieMenu() {
               <h3 className="Hoodie-menu-h3">{hoodie.name}</h3>
               <p className="Hoodie-menu-p">{hoodie.description}</p>
               <p className="Hoodie-menu-price">Price: ${hoodie.price}</p>
+              <button>Add to Cart</button>
             </div>
           </li>
         ))}
       </ul>
+    </div>
+    <Footer/>
     </div>
   );
 }

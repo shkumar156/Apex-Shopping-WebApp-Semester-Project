@@ -49,3 +49,32 @@ button {
 button:hover {
   background-color: #c82316; /* Darker red color on hover */
 }
+
+@media (max-width: 600px) {
+  .delete-order-form {
+    width: 90%;
+    max-width: 350px;
+    padding: 15px;
+    margin: 15% auto;
+  }
+
+  .delete-order-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .form-group input {
+    font-size: 16px;
+    padding: 12px 10px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 10px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+}

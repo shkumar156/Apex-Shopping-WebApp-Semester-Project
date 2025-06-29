@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './shoes.css';
 import { API } from '../App';
+import Footer from './Footer';
 
 function SunglassesMenu() {
   const [sunglasses, setSunglasses] = useState([]);
@@ -27,6 +28,7 @@ function SunglassesMenu() {
   }, []); // Empty dependency array ensures that this effect runs only once on mount
 
   return (
+    <div>
     <div className="shoes-menu">
       <h2>Sunglasses Menu</h2>
       <ul>
@@ -39,10 +41,13 @@ function SunglassesMenu() {
               <h3>{sunglass.name}</h3>
               <p>{sunglass.description}</p>
               <p className="price">Price: ${sunglass.price}</p>
+              <button>Add to Cart</button>
             </div>
           </li>
         ))}
       </ul>
+    </div>
+    <Footer/>
     </div>
   );
 }

@@ -10,49 +10,50 @@ function Navbar({ setUser, setAdminUser, user, admin }) {
   };
 
   return (
-    <>
-      <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="/home">
-            <img className="logo" src={logo} alt="" />
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              {(user || admin) && (
-                <>
-                  <li className="nav-item">
-                    <Link to="/Home" className="nav-link txt !active">Home</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/aboutus" className="nav-link txt !active">About Us</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/menucard" className="nav-link txt !active">Menu</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/contactus" className="nav-link txt !active">Contact Us</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/sale" className="nav-link txt !active">Sale Items</Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/track" className="nav-link txt !active">Track Orders</Link>
-                  </li>
-                </>
-              )}
+    <nav className="navbar navbar-expand-lg">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/home">
+          <img className="logo" src={logo} alt="Logo" />
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-              {/* Signup/Login dropdown always visible */}
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            {(user || admin) && (
+              <>
+                <li className="nav-item">
+                  <Link to="/home" className="nav-link txt !active">Home</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/aboutus" className="nav-link txt !active">About Us</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/menucard" className="nav-link txt !active">Menu</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/contactus" className="nav-link txt !active">Contact Us</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/sale" className="nav-link txt !active">Sale Items</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/track" className="nav-link txt !active">Track Orders</Link>
+                </li>
+              </>
+            )}
+
+            {/* User login/signup - only show when NOT logged in as user or admin */}
+            {!(user || admin) && (
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle txt !active"
@@ -73,39 +74,42 @@ function Navbar({ setUser, setAdminUser, user, admin }) {
                   </li>
                 </ul>
               </li>
+            )}
 
-              {/* Admin always visible */}
+            {/* Admin button - only show when NOT logged in as user or admin */}
+            {!(user || admin) && (
               <li className="nav-item">
                 <Link to="/adminlogin" className="nav-link txt !active">Admin</Link>
               </li>
-
-              {(user || admin) && (
-                <li className="nav-item">
-                  <Link onClick={handleLogout} className="nav-link txt !active">
-                    Log out
-                  </Link>
-                </li>
-              )}
-            </ul>
-
-            {/* Search bar visible only when logged in */}
-            {(user || admin) && (
-              <form className="d-flex" role="search">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button className="btn btn-outline-danger" type="submit">
-                  Search
-                </button>
-              </form>
             )}
-          </div>
+
+            {/* Logout option - only show when logged in */}
+            {(user || admin) && (
+              <li className="nav-item">
+                <Link onClick={handleLogout} className="nav-link txt !active">
+                  Log out
+                </Link>
+              </li>
+            )}
+          </ul>
+
+          {/* Search bar - only show when logged in */}
+          {(user || admin) && (
+            <form className="d-flex" role="search">
+              <input
+                className="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="btn btn-outline-danger" type="submit">
+                Search
+              </button>
+            </form>
+          )}
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 }
 

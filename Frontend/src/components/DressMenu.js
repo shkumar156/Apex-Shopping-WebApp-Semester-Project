@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './dress.css';
 import { API } from '../App';
+import Footer from './Footer';
+import { Button } from '@mui/material';
 
 function DressMenu() {
   const [dresses, setDresses] = useState([]);
@@ -27,6 +29,7 @@ function DressMenu() {
   }, []); // Empty dependency array ensures that this effect runs only once on mount
 
   return (
+    <div>
     <div className="Dress-menu">
       <h2>Dress Menu</h2>
       <ul className="Dress-menu-ul">
@@ -39,11 +42,15 @@ function DressMenu() {
               <h3 className="Dress-menu-h3">{dress.name}</h3>
               <p className="Dress-menu-p">{dress.description}</p>
               <p className="Dress-menu-price">Price: ${dress.price}</p>
+              <button>Add to Cart</button>
+              
             </div>
           </li>
         ))}
       </ul>
     </div>
+    <Footer/>
+      </div>
   );
 }
 

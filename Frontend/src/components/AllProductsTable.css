@@ -129,3 +129,39 @@
 .hoverable-cell:hover .icons .icon i {
   color: #000;
 }
+
+@media (max-width: 600px) {
+  .product-form-container,
+  .all-product-table-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 10px 0 !important;
+    box-sizing: border-box;
+  }
+  .custom-table {
+    min-width: 600px;
+    table-layout: fixed;
+    font-size: 12px;
+  }
+  .custom-table th,
+  .custom-table td {
+    font-size: 11px;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+    padding: 6px 4px;
+  }
+  .button-container {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .button-container button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+  .loading-container {
+    margin-top: 10%;
+  }
+}

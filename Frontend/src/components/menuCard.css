@@ -74,3 +74,44 @@
     background-color: #333;
   }
   
+  @media (max-width: 600px) {
+    .menu-card-row-cols {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .menu-card-col {
+      width: 100%;
+      max-width: 100%;
+    }
+    
+    .menu-card-img {
+      height: 200px;
+    }
+    
+    .menu-card-title {
+      font-size: 1rem;
+    }
+    
+    .menu-card-text {
+      font-size: 0.8rem;
+    }
+    
+    .menu-card-title-container {
+      height: auto;
+      min-height: 3vh;
+    }
+    
+    .menu-card-btn-container {
+      height: auto;
+      min-height: 4vh;
+      padding: 10px 0;
+    }
+    
+    button {
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 16px;
+    }
+  }
+  

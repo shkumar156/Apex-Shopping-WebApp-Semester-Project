@@ -55,3 +55,34 @@
 .empty-day {
   background-color: transparent;
 }
+
+@media (max-width: 600px) {
+  .calendar {
+    width: 90%;
+    max-width: 300px;
+    margin-top: 3%;
+  }
+  
+  .calendar-header {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .days-of-week {
+    padding: 3px;
+    font-size: 12px;
+  }
+  
+  .day-of-week {
+    padding: 3px;
+  }
+  
+  .calendar-day {
+    padding: 8px 5px;
+    font-size: 12px;
+  }
+  
+  .calendar-grid {
+    grid-gap: 1px;
+  }
+}

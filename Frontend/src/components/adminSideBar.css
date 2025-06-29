@@ -23,3 +23,28 @@
     margin: 0px 15px;
     
 }
+
+@media (max-width: 600px) {
+  .admin-side-bar {
+    height: auto;
+    min-height: 50vh;
+    padding: 10px 5px;
+  }
+  
+  .side-bar-list {
+    padding: 8px 5px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .col-md-3 {
+    margin-top: 0;
+    padding: 0 5px;
+  }
+  
+  .adminSidebar-icons {
+    margin: 0px 8px;
+    font-size: 14px;
+  }
+}

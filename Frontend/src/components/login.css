@@ -88,3 +88,43 @@ input[type="password"] {
 
 .form-group label{color: white;}
 
+@media (max-width: 600px) {
+  .login-form {
+    height: 100vh;
+    margin-top: 0;
+    padding: 20px 10px;
+  }
+  
+  .form-container {
+    padding: 20px 15px;
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .login-form h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    font-size: 16px;
+    padding: 12px 10px;
+  }
+  
+  .loginbutton {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px;
+    margin-top: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+  }
+}
+

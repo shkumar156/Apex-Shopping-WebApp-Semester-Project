@@ -11,3 +11,20 @@
     height: 100vh;
     width: 100%;
 }
+
+@media (max-width: 600px) {
+  .carousel {
+    width: 100vw;
+    height: auto;
+    min-height: 200px;
+    padding: 0;
+  }
+  .carouselImg {
+    width: 100vw;
+    height: auto;
+    max-height: 40vh;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+}

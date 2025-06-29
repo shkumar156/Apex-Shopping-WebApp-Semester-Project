@@ -39,6 +39,9 @@ import { ToastContainer } from "react-toastify";
 import UserLoginDetails from "./View/UserLoginDetails";
 import Admindetails from "./components/Admindetails";
 import axios from "axios";
+import Admin from "./Admin";
+
+
 
 const API = axios.create({
   baseURL: "https://web-technologies-delta.vercel.app",
@@ -117,7 +120,6 @@ console.log(isuser);
     if (admin) {
       navigate("/map");
     } else navigate("/adminlogin");
-    
   }, [admin]);
   
   useEffect(() => {
@@ -163,7 +165,6 @@ console.log(isuser);
           <Route path="/settings" element={<Adminsettings />} />
           <Route path="/dash" element={<Adminproduct />} />
           <Route path="/customerservice" element={<Signup />} />
-          <Route path="/" exact component={<MenuCard />} />
           <Route path="/shirt-menu" element={<ShirtMenu />} />
           <Route path="/dress-menu" element={<DressMenu />} />
           <Route path="/shoes-menu" element={<ShoesMenu />} />

@@ -3,6 +3,7 @@ import adminImg from "./Img/admin.png";
 import AdminSideBar from "./components/AdminSideBar";
 import Layout from "./components/Layout";
 import Footer from "./components/Footer";
+import { Outlet } from "react-router-dom";
 
 
 function Admin() {
